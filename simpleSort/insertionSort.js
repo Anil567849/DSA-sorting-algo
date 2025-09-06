@@ -1,7 +1,9 @@
 
 /*
 Insertion Sort → Insert each element into its correct place among already sorted part.
-Idea: Like arranging playing cards in hand.
+Idea: Keep shifting the current element to the left until it encounters smaller element.
+Exmaple: 1, 2, 3, 4, 0
+👉 For 0: among [_, 1, 2, 3, 4], shift all larger elements to the right, and insert 0 immediately when you encounter a smaller element.
 */
 
 function insertionSort(arr, size) {

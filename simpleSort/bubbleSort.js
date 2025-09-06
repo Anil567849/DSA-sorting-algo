@@ -12,11 +12,14 @@ function swap(arr, i, j) {
 
 function bubbleSort(arr, size) {
     for (let i = 0; i < size; i++) {
+        let swapped = false; // optimization: stop if already sorted
         for (let j = 1; j < (size - i); j++) {
             if (arr[j - 1] >= arr[j]) {
                 swap(arr, j - 1, j);
+                swapped = true;
             }
         }
+        if(!swapped) break;  // array already sorted
     }
 }
 

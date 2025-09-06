@@ -1,7 +1,7 @@
 
 /*
 Selection Sort → Repeatedly find the smallest element and put it in its correct position.
-Idea: Select min and place it at start.
+Idea: Select the minimum element and place it at the current ith position.
 */
 
 function swap(arr, i, j) {
